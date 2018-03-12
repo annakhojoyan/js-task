@@ -3,5 +3,5 @@ function greeting(greeting) {
         console.log(greeting + ' ' + name);
    }
   }
-let currentusername = greeting("Hello");
-currentusername("Ann");
+let currentusername = greeting('Hello');
+currentusername('Ann');
