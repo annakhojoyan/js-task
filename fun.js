@@ -1,7 +1,7 @@
-function greeting(greeting1) {
-   return function a(greeting2){
-        console.log(greeting1 + ' ' + greeting2);
+function greeting(greeting) {
+   return function (name){
+        console.log(greeting + ' ' + name);
    }
   }
-let b = greeting("Hello");
-b("Ann");
+let currentusername = greeting("Hello");
+currentusername("Ann");
