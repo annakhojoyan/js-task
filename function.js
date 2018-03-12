@@ -1,12 +1,7 @@
-var prompt = require('prompt');
-
-function greeting(name) {
-    alert('Hello ' + name);
+function greeting(greeting1) {
+   return function a(greeting2){
+        console.log(greeting1 + ' ' + greeting2);
+   }
   }
-  
-  function processUserInput(callback) {
-    var name = prompt('Please enter your name.');
-    callback(name);
-  }
-  
-  processUserInput(greeting);
+let b = greeting("Hello");
+b("Ann");
