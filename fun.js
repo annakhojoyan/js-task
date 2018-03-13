@@ -1,8 +1,9 @@
-function greeting(greeting) {
-  return function (name) {
-    console.log(greeting + ' ' + name);
+$(document).ready(function () {
+  function greeting(greeting) {
+    return function (name) {
+      console.log(greeting + ' ' + name);
+    }
   }
-}
-let currentusername = greeting('Hello');
-// currentusername('Ann');
-//currentusername(document.getElementById("name").value);
+});
+let currentusername = greeting(getElementsByName("text").value);
+currentusername(document.getElementsByName("name").value);
