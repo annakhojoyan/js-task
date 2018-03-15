@@ -7,16 +7,15 @@
       $( "#form2" ).fadeIn();
      result = $( "#text" ).val();     
     });
-    console.log("ahjdhghagdhghjd")
     $( "#form2" ).submit(function( event ) {
       $( "#form2" ).fadeOut();
      result +=  $( "#name" ).val(); 
-     $( "span" ).text( result ).fadeIn();    
+     $( "#span" ).text( result );    
     });
   }
   function greeting(greeting) {
     return function (name) {
-      console.log(greeting + ' ' + name);
+      return (greeting + ' ' + name);
     }
   }
 
@@ -24,4 +23,3 @@
   currentusername(name);
   init();
 })();
-
